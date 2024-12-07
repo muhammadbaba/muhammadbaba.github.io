@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.home-container {
+    background-image: url(/img1/forsaken-films-C1W7ve6ozQc-unsplash.jpg);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.home {
+    max-width: 750px;
+    margin: auto;
+}
+
+.home p {
+    color: #fff;
+}
+
+span {
+   opacity: 0.55; 
+}
+
+
+nav ul {
+    margin: auto;
+    color: #fff;
+}
+
+nav {
+    margin-bottom: 20px;
+    background-color: rgb(23, 22, 22);
+}
+
+.bi {
+    margin-right: 20px;
+    font-size: larger;
+}
+.home hr {
+    width: 700px;
+    margin: auto;
+    border-bottom: 1px solid darkgrey;
+}
+/* About styling */
+.about {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 0;
+    display: flex;
+}
+
+.about img {
+    width: 150px;
+    height: 150px;
+    margin-right: 70px;
+    border-radius: 50%;
+}
+
+.about p {
+    opacity: 0.55;
+}
+
+.resume {
+    max-width: 900px;
+    margin: auto;
+    padding: 70px 0;
+}
+
+/* Resume styling */
+.academic {
+    display: flex;
+}
+
+.academic .text {
+    opacity: unset;
+    font-style: italic;
+}
+
+
+.edu {
+    margin-right: 70px;
+}
+
+.skills {
+    display: flex;
+}
+
+.skill {
+    margin-right: 120px;
+}
+
+.language {
+    width: 700px;
+}
+.footer {
+    opacity: 0.55;
+}
+
+footer p {
+    font-size: small;
+    opacity: 0.55;
+}
