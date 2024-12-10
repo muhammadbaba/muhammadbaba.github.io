@@ -3,6 +3,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+body {
+    /* font-family: Arial, Helvetica, sans-serif; */
+}
 .home-container {
     background-image: url(/img1/forsaken-films-C1W7ve6ozQc-unsplash.jpg);
     background-position: bottom center;
@@ -23,16 +26,38 @@ span {
    opacity: 0.55; 
 }
 
+header {
+    background-color: rgb(57, 56, 56);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+
 
 nav ul {
-    margin: auto;
-    color: #fff;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
 
-nav {
-    margin-bottom: 20px;
-    background-color: rgb(23, 22, 22);
+ul li {
+    margin: 0 10px;
+    padding: 10px 0;
 }
+ul a {
+    color: #fff;
+    text-decoration: none;
+    font-size: small;
+}
+
+nav ul a:hover {
+    color: red;
+}
+
 
 .bi {
     margin-right: 20px;
@@ -48,7 +73,35 @@ nav {
     max-width: 900px;
     margin: auto;
     padding: 70px 0;
-    display: flex;
+    
+}
+@media(max-width: 576px) {
+    .about {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 70px 30px;
+    }
+    .about img {
+        margin-bottom: 30px;
+        position: relative;
+        left: 35px;
+    }
+}
+
+@media(min-width: 576px) {
+    .about {
+        display: flex;
+    }
+    .contact-details {
+        width: 500px;
+            display: flex;
+            justify-content: space-between;
+    }
+    .contact .btn {
+        width: 300px;
+    }
 }
 
 .about img {
@@ -62,15 +115,31 @@ nav {
     opacity: 0.55;
 }
 
+/* Resume styling */
 .resume {
     max-width: 900px;
     margin: auto;
     padding: 70px 0;
 }
+@media(max-width: 576px) {
+    .academic {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 0 30px;
+    }
+    .academic .edu {
+        margin-bottom: 20px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
 
-/* Resume styling */
-.academic {
-    display: flex;
+@media(min-width: 576px) {
+    .academic {
+        display: flex;
+    }
 }
 
 .academic .text {
@@ -81,19 +150,42 @@ nav {
 
 .edu {
     margin-right: 70px;
+    border-bottom: 2px green solid;
 }
 
-.skills {
-    display: flex;
+@media(max-width: 576px) {
+    .skills {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 30px;
+        text-align: center;
+    }
+    .skill {
+        margin-bottom: 30px;
+        position: relative;
+        left: 55px;
+    }
+    .language {
+        width: 500px;
+    }
+}
+
+@media(min-width: 576px) {
+    .skills {
+        display: flex;
+    }
+        
+    .language {
+        width: 700px;
+    }
 }
 
 .skill {
     margin-right: 120px;
+    border-bottom: 2px solid green;
 }
 
-.language {
-    width: 700px;
-}
 .footer {
     opacity: 0.55;
 }
@@ -101,4 +193,92 @@ nav {
 footer p {
     font-size: small;
     opacity: 0.55;
+}
+
+/* project styling */
+.project-container {
+    background-color: rgb(238, 214, 183);
+}
+.project {
+    /* max-width: 900px; */
+    margin: auto;
+    overflow: hidden;
+}
+
+.project img {
+    width: 350px;
+    height: 230px;
+    margin: 0 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+.project h4 {
+    margin: 30px 0;
+    color: #fff;
+    border-bottom: 2px solid green;
+}
+
+@media(min-width: 576px) {
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .screenshot {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+    .banner {
+        position: relative;
+    }
+    
+    .banner img {
+        display: block;
+    }
+    
+    .banner-description {
+        position: absolute;
+        top: 200px;
+        left: 30%;
+    }
+    .blog {
+        top: 190px;
+    }
+    .fintech {
+        top: 200px;
+    }
+}
+@media(max-width: 576px) {
+    .project img {
+        width: 500px;
+        padding-left: 20px;
+        padding-right: 25px;
+    }
+    .project {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.project img {
+    transition: all 2s 1s;
+}
+
+.project img:hover {
+    transform: scale(1.1);
+}
+
+.banner {
+    position: relative;
+}
+.banner img {
+    display: block;
+}
+
+.banner-description {
+    position: absolute;
+    bottom: -10px;
+    left: 30%;
 }
